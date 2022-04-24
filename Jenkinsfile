@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://github.com/sivaraju3/nodeapp.git', 'dockerhub') {
+    docker.withRegistry('url':'https://github.com/sivaraju3/nodeapp.git', 'dockerhub') {
 
         def customImage = docker.build("sivaraju3/dockerweb:eccom")
 
